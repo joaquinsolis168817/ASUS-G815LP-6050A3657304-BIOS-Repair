@@ -1,0 +1,56 @@
+# Documentation-only repository. Firmware patterns apply at any depth.
+# Case-insensitive extension patterns also cover uppercase/mixed-case names.
+*.[bB][iI][nN]
+*.[rR][oO][mM]
+*.[dD][uU][mM][pP]
+*.[fF][dD]
+*.[cC][aA][pP]
+*.[fF][wW]
+*.[iI][mM][gG]
+*.[hH][eE][xX]
+*.[iI][hH][eE][xX]
+*.[sS][pP][iI]
+*.[pP][fF][aA][tT]
+*.[fF][vV]
+*.[fF][fF][sS]
+*.[rR][aA][wW]
+
+# Numeric firmware extensions, including G815LPAS.338.
+*.[0-9][0-9][0-9]
+[gG]815[lL][pP][aA][sS].*
+
+# Original reads and derived case images, even without standard extensions.
+[gG]815[lL][pP]_[oO][rR][iI][gG][iI][nN][aA][lL]*
+[gG]815[lL][pP]_338_[cC][lL][eE][aA][nN]_[nN][vV][rR][aA][mM]*
+[gG]815[lL][pP]_338_[fF][uU][lL][lL]_[sS][pP][iI]_[rR][eE][bB][uU][iI][lL][tT]*
+
+# Private firmware, original reads, and backups.
+[dD][uU][mM][pP][sS]/
+[fF][iI][rR][mM][wW][aA][rR][eE]/
+[bB][aA][cC][kK][uU][pP][sS]/
+[oO][rR][iI][gG][iI][nN][aA][lL][sS]/
+[pP][rR][iI][vV][aA][tT][eE]/
+[rR][eE][aA][dD][bB][aA][cC][kK][sS]/
+
+# Archives can accidentally package private firmware.
+*.[zZ][iI][pP]
+*.7[zZ]
+*.[rR][aA][rR]
+*.[tT][aA][rR]
+*.[gG][zZ]
+*.[bB][zZ]2
+*.[xX][zZ]
+
+# Temporary files, editor state, and OS metadata.
+*.bak
+*.tmp
+*.temp
+*.log
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
