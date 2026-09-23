@@ -66,3 +66,36 @@ The first boot can take longer than normal because of firmware/hardware initiali
 - [Disclaimer](DISCLAIMER.md): risks and intended technical audience.
 
 The included `.gitignore` helps prevent accidental firmware uploads. Ignore rules are a safeguard, not a substitute for reviewing the files staged for publication; they do not remove files already tracked by Git.
+
+## Professional BIOS Repair Service
+
+I also provide paid remote BIOS/SPI firmware analysis and reconstruction services for laptop repair technicians.
+
+Services may include:
+
+- Verification and comparison of SPI dumps
+- NVRAM / Secure Boot related repair
+- Machine-specific BIOS reconstruction
+- Analysis of corrupted or incomplete firmware
+- Remote assistance for SPI programming and firmware recovery
+- Complex firmware cases involving AMI PFAT / Intel BIOS Guard structures
+
+### How it works
+
+The technician sends at least two verified dumps read from the original SPI flash.
+
+The dumps are compared and analyzed before any reconstruction work is performed.
+
+Machine-specific data should always be preserved whenever possible.
+
+### Important
+
+This is a professional repair service, not a guarantee that every firmware case can be recovered.
+
+Never send customer passwords, personal documents or unnecessary private information.
+
+For pricing and availability, contact me through GitHub.
+
+## Support this work
+
+If this documentation helped you, you can support future repair documentation through GitHub Sponsors.
